@@ -28,14 +28,10 @@ const Footer = ({ noSubBG }) => {
               <div className="con-info custom-font">
                 <ul>
                   <li>
-                    <span>Email : </span> Avo_support@website.com
+                    vennue@quopard.com
                   </li>
                   <li>
-                    <span>Address : </span> A32 , Ave 15th Street, Door 211, San
-                    Franciso, USA 32490.
-                  </li>
-                  <li>
-                    <span>Phone : </span> (+1) 2345 678 44 88
+                    Alica 49, Lomas de Chapultepec, CDMX, México
                   </li>
                 </ul>
               </div>
@@ -46,13 +42,10 @@ const Footer = ({ noSubBG }) => {
                     <i className="fab fa-facebook-f"></i>
                   </a>
                   <a href="#0" className="icon">
-                    <i className="fab fa-twitter"></i>
+                    <i className="fab fa-instagram"></i>
                   </a>
                   <a href="#0" className="icon">
-                    <i className="fab fa-pinterest"></i>
-                  </a>
-                  <a href="#0" className="icon">
-                    <i className="fab fa-behance"></i>
+                    <i className="fab fa-linkedin"></i>
                   </a>
                 </div>
               </div>
@@ -61,7 +54,7 @@ const Footer = ({ noSubBG }) => {
           <div className="col-lg-5 offset-lg-2">
             <div className="subscribe mb-50">
               <h6 className="custom-font stit simple-btn">Newslatter</h6>
-              <p>Sign up for subscribe out newsletter!</p>
+              <p>Siscribete para recibir noticias y datos importantes</p>
               <Formik
                 initialValues={{
                   subscribe: "",
@@ -80,36 +73,23 @@ const Footer = ({ noSubBG }) => {
                         validate={validateEmail}
                         type="email"
                         name="subscribe"
-                        placeholder="Your Email"
+                        placeholder="Tu Email"
                       />
                       {errors.email && touched.email && (
                         <div>{errors.email}</div>
                       )}
-                      <button className="cursor-pointer">Subscribe</button>
+                      <button className="cursor-pointer">Subscribirme</button>
                     </div>
                   </Form>
                 )}
               </Formik>
             </div>
-            <div className="insta">
-              <h6 className="custom-font stit simple-btn">Instagram Post</h6>
-              <div className="insta-gallary">
-                <a href="#0">
-                  <img src="/img/insta/1.jpg" alt="" />
-                </a>
-                <a href="#0">
-                  <img src="/img/insta/2.jpg" alt="" />
-                </a>
-                <a href="#0">
-                  <img src="/img/insta/3.jpg" alt="" />
-                </a>
-              </div>
-            </div>
+
           </div>
         </div>
         <div className="copyrights text-center">
           <p>
-            © 2022, Avo Template. Made with passion by <a href="#0">ThemesCamp</a>.
+            © 2022, Indoors By Vennue. Is a <a href="#0">Quopard LLC</a> platform.
           </p>
         </div>
       </div>

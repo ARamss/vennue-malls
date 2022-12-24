@@ -8,11 +8,11 @@ const Services1 = () => {
       <div className="container">
         <div className="sec-head custom-font text-center">
           <h6 className="wow fadeIn" data-wow-delay=".5s">
-            Best Features
+            Nuestras
           </h6>
           <Split>
             <h3 className="wow words chars splitting" data-splitting>
-              Services.
+              Soluciones.
             </h3>
           </Split>
           <span className="tbg">Services</span>
@@ -37,10 +37,9 @@ const Services1 = () => {
             data-wow-delay=".5s"
           >
             <span className="icon pe-7s-paint-bucket"></span>
-            <h6>Graphic Design</h6>
+            <h6>Vennue Maps</h6>
             <p>
-              Tempore corrupti temporibus fuga earum asperiores fugit
-              laudantium.
+              Mapeamos tu centro comercial y generamos un ambiente de códigos QR.
             </p>
           </div>
           <div
@@ -48,20 +47,16 @@ const Services1 = () => {
             data-wow-delay=".7s"
           >
             <span className="icon pe-7s-phone"></span>
-            <h6>
-              Web &amp; <br /> Mobile Design
-            </h6>
-            <p>Tempore corrupti temporibus fuga earum asperiores fugit.</p>
+            <h6>Vennue Ads</h6>
+            <p>Nos aliamos contigo para que tus locatarios y otros anunciantes puedan tener precencia en el mapa digital.</p>
           </div>
           <div
             className="col-lg-3 col-md-6 item-box wow fadeInLeft"
             data-wow-delay=".9s"
           >
             <span className="icon pe-7s-display1"></span>
-            <h6>
-              Social <br /> media Marketing
-            </h6>
-            <p>Tempore corrupti temporibus fuga earum asperiores fugit.</p>
+            <h6>Vennue Analytics</h6>
+            <p>Analiza tu audiencia y toma las mejores decisiones para mejorar la experiencia de los visitantes y locatarios.</p>
           </div>
         </div>
       </div>

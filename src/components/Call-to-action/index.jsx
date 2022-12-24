@@ -14,13 +14,13 @@ const CallToAction = ({ img, theme, subBG }) => {
             <div className="content sm-mb30">
               <Split>
                 <h6 className="wow words chars splitting" data-splitting>
-                  Let&apos;s Talk
+                  Platiquemos
                 </h6>
                 <h2
                   className="wow words custom-font chars splitting"
                   data-splitting
                 >
-                  about your <b>next project</b>.
+                  sobre <b>digitalizarte</b>.
                 </h2>
               </Split>
             </div>
@@ -34,7 +34,7 @@ const CallToAction = ({ img, theme, subBG }) => {
                 } wow fadeInUp`}
                 data-wow-delay=".5s"
               >
-                <span>Get In Touch</span>
+                <span>Escríbenos</span>
               </a>
             </Link>
           </div>

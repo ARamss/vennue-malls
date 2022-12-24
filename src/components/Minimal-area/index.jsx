@@ -31,39 +31,38 @@ const MinimalArea = () => {
                   className="wow custom-font words chars splitting"
                   data-splitting
                 >
-                  About us.
+                  Fácil, rápido y seguro.
                 </h4>
               </Split>
 
               <Split>
                 <p className="wow txt words chars splitting" data-splitting>
-                  Our creative Ad agency is ranked among the finest in the US.
-                  We cultivate smart ideas for start-ups and seasoned players.
+                  Sin necesidad de descargar aplicaciones les damos acceso directo a tus visitates a tu mapa interactivo.
                 </p>
               </Split>
               <ul className="feat">
                 <li className="wow fadeInUp" data-wow-delay=".2s">
                   <h6>
-                    <span>1</span> Our Mission
+                    <span>1</span> Fácil
                   </h6>
                   <p>
-                    luctus massa ipsum at tempus eleifend congue lectus bibendum
+                    Escanea el QR, accede al link y estas listo para navegar.
                   </p>
                 </li>
                 <li className="wow fadeInUp" data-wow-delay=".4s">
                   <h6>
-                    <span>2</span> Our Goals
+                    <span>2</span> Rápido
                   </h6>
                   <p>
-                    luctus massa ipsum at tempus eleifend congue lectus bibendum
+                    No es necesario descargar ninguna aplicacion, con el buscador de tu celular podrás usar la experiencia Vennue.
                   </p>
                 </li>
                 <li className="wow fadeInUp" data-wow-delay=".6s">
                   <h6>
-                    <span>3</span> Why Us?
+                    <span>3</span> Seguro
                   </h6>
                   <p>
-                    luctus massa ipsum at tempus eleifend congue lectus bibendum
+                    Mantenemos la privacidad y seguridad de tus visitantes dentro de nuestros protocolos de seguridad.
                   </p>
                 </li>
               </ul>

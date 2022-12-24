@@ -162,10 +162,9 @@ const ContactWithMap = ({ theme = "dark" }) => {
       <footer className="footer-half sub-bg">
         <div className="container">
           <div className="copyrights text-center mt-0">
-            <p>
-              © 2022, Avo Template. Made with passion by 
-              <a href="#0">ThemesCamp</a>.
-            </p>
+          <p>
+            © 2022, Indoors By Vennue. Is a <a href="#0">Quopard LLC</a> platform.
+          </p>
           </div>
         </div>
       </footer>

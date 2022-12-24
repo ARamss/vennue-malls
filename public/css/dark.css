@@ -4749,7 +4749,7 @@ header.simpl {
     font-weight: 300;
     margin-bottom: 30px; }
   .footer-half .cont .logo {
-    width: 55px;
+    width: 255px;
     margin-bottom: 30px; }
   .footer-half .cont .con-info li {
     margin-top: 10px;
@@ -5074,7 +5074,7 @@ header.simpl {
     right: 15px;
     bottom: 15px; }
   .navbar .logo {
-    width: 40px; }
+    width: 255px; }
   .hamenu .menu-links .main-menu > li {
     font-size: 24px; }
   .hamenu .menu-links .main-menu .sub-menu li {

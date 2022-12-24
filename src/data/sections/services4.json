@@ -1,20 +1,20 @@
 [
     {
         "id": 1,
-        "title": "Digital Marketing",
+        "title": "Vennue Maps",
         "icon": "pe-7s-gleam",
-        "content": "Tempore corrupti temporibus fuga earum asperiores fugit laudantium."
+        "content": "Tu experiencia en mapa interactivo con acceso por QR."
     },
     {
       "id": 2,
-      "title": "Web & App Development",
+      "title": "Vennue Ads",
       "icon": "pe-7s-phone",
-      "content": "Tempore corrupti temporibus fuga earum asperiores fugit laudantium."
+      "content": "Plataforma de anuncios sobre tu mapa para tus locatarios y otros anunciantes."
     },
     {
       "id": 3,
-      "title": "Graphic Design",
+      "title": "Vennue Analytics",
       "icon": "pe-7s-magic-wand",
-      "content": "Tempore corrupti temporibus fuga earum asperiores fugit laudantium."
+      "content": "Te brindamos una plataforma de Data Analytics para que puedas comprender mejor a tu audiencia."
     }
 ]
