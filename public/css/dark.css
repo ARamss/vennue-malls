@@ -1011,7 +1011,9 @@ body {
 [data-overlay-dark] .container,
 [data-overlay-light] .container {
   position: relative;
-  z-index: 2; }
+  z-index: 2;
+  padding-bottom: 120px;
+}
 
 [data-overlay-dark]:before,
 [data-overlay-light]:before {
