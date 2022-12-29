@@ -8,7 +8,6 @@ import IntroWithSlider1 from "../../components/Intro-with-slider1";
 import Navbar from "../../components/Navbar";
 import Numbers1 from "../../components/Numbers";
 import Services1 from "../../components/Services1";
-import SkillsCircle from "../../components/Skills-circle";
 import VideoWithTestimonials from "../../components/Video-with-testimonials";
 import Works1Slider from "../../components/Works1-slider";
 import DarkTheme from "../../layouts/Dark";
@@ -53,7 +52,6 @@ const Homepage1 = () => {
         <Numbers1 />
         <Works1Slider />
         <VideoWithTestimonials />
-        <SkillsCircle theme="dark" subBG />
         <Clients1 theme="dark" />
         <CallToAction subBG />
         <Footer />

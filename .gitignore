@@ -33,6 +33,9 @@ jspm_packages
 # Optional npm cache directory
 .npm
 
+# static folder for DigitalOcean App Platform
+_static
+
 # Optional REPL history
 .node_repl_history
 .next
