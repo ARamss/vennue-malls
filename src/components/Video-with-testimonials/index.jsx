@@ -34,10 +34,10 @@ const VideoWithTestimonials = () => {
                 <div className="vid-icon">
                   {typeof window !== "undefined" && (
                     <ModalVideo
-                      channel="vimeo"
+                      channel="youtube"
                       autoplay
                       isOpen={isOpen}
-                      videoId="127203262"
+                      videoId="kTlG5jU9iFA"
                       onClose={() => setOpen(false)}
                     />
                   )}
@@ -47,7 +47,7 @@ const VideoWithTestimonials = () => {
                       e.preventDefault();
                       setOpen(true);
                     }}
-                    href="https://vimeo.com/127203262"
+                    href="https://youtu.be/kTlG5jU9iFA"
                   >
                     <div className="vid-butn">
                       <span className="icon">
@@ -60,7 +60,7 @@ const VideoWithTestimonials = () => {
                 <div className="cont">
                   <Split>
                     <h3 className="wow" data-splitting>
-                      So that&apos;s us. There&apos;s no other way to put it.
+                      ¿Con dudas? Deja que este video te explique mejor...
                     </h3>
                   </Split>
                 </div>

@@ -35,9 +35,9 @@ const IntroWithSlider1 = ({ sliderRef }) => {
       <div className="swiper-container parallax-slider">
         {!load ? (
           <Swiper
-            speed={1000}
+            speed={3000}
             autoplay={{
-              delay: 1000,
+              delay: 3000,
               disableOnInteraction: true,
             }}
             parallax={true}
@@ -107,7 +107,7 @@ const IntroWithSlider1 = ({ sliderRef }) => {
                           {slide?.content && <p>{slide.content}</p>}
                           <Link href="/about/about-dark">
                             <a className="btn-curve btn-lit mt-30">
-                              <span>Look More</span>
+                              <span>Quiero saber más</span>
                             </a>
                           </Link>
                         </div>
