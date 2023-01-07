@@ -24,11 +24,11 @@ const Services1 = () => {
             style={{ backgroundImage: "url(/img/1.jpg)" }}
           >
             <h4 className="custom-font">
-              Best Of <br /> Our Features
+              La Mejor <br /> Experiencia Indoor
             </h4>
             <Link href="/about/about-dark">
               <a className="btn-curve btn-bord btn-lit mt-40">
-                <span>See All Services</span>
+                <span>Conócenos</span>
               </a>
             </Link>
           </div>
@@ -36,7 +36,7 @@ const Services1 = () => {
             className="col-lg-3 col-md-6 item-box wow fadeInLeft"
             data-wow-delay=".5s"
           >
-            <span className="icon pe-7s-paint-bucket"></span>
+            <span className="icon pe-7s-map-2"></span>
             <h6>Vennue Maps</h6>
             <p>
               Mapeamos tu centro comercial y generamos un ambiente de códigos QR.
@@ -46,7 +46,7 @@ const Services1 = () => {
             className="col-lg-3 col-md-6 item-box wow fadeInLeft"
             data-wow-delay=".7s"
           >
-            <span className="icon pe-7s-phone"></span>
+            <span className="icon pe-7s-speaker"></span>
             <h6>Vennue Ads</h6>
             <p>Nos aliamos contigo para que tus locatarios y otros anunciantes puedan tener precencia en el mapa digital.</p>
           </div>
