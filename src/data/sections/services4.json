@@ -2,19 +2,19 @@
     {
         "id": 1,
         "title": "Vennue Maps",
-        "icon": "pe-7s-gleam",
+        "icon": "pe-7s-map-2",
         "content": "Tu experiencia en mapa interactivo con acceso por QR."
     },
     {
       "id": 2,
       "title": "Vennue Ads",
-      "icon": "pe-7s-phone",
+      "icon": "pe-7s-speaker",
       "content": "Plataforma de anuncios sobre tu mapa para tus locatarios y otros anunciantes."
     },
     {
       "id": 3,
       "title": "Vennue Analytics",
-      "icon": "pe-7s-magic-wand",
+      "icon": "pe-7s-graph",
       "content": "Te brindamos una plataforma de Data Analytics para que puedas comprender mejor a tu audiencia."
     }
 ]

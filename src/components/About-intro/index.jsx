@@ -15,8 +15,8 @@ const AboutIntro = () => {
             <div className="text">
               <Split>
                 <p className="wow txt words chars splitting" data-splitting>
-                  Nuestro enfoque no es solo brindar mapas indoor digitales, sino convertir tu centro comercial en una pltaforma conveniente para tus visitantes y locatarios.<br /><br />
-                  Nos aliamos contigo para 
+                  Nuestro enfoque no es únicamente brindar mapas indoor digitales, sino convertir tu centro comercial en una pltaforma conveniente para tus visitantes y locatarios.<br /><br />
+                  Nos aliamos contigo para brindar los mejores servicios de publicidad digital y análisis de datos para brindar la mejor experiencia de tecnología integrada.
                 </p>
               </Split>
             </div>

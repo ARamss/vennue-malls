@@ -1,114 +1,31 @@
 import React from "react";
-import { Formik, Form, Field } from "formik";
 import axios from 'axios';
 import Split from '../Split';
+import HubspotForm from 'react-hubspot-form'
 
-const ContactWithMap = ({ theme = "dark" }) => {
-  const messageRef = React.useRef(null);
-  function validateEmail(value) {
-    let error;
-    if (!value) {
-      error = "Required";
-    } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(value)) {
-      error = "Invalid email address";
-    }
-    return error;
-  }
-  const sendMessage = (ms) => new Promise((r) => setTimeout(r, ms));
-  return (
+const ContactWithMap = ({ theme = "dark" }) => {  return (
     <>
       <section className="contact section-padding">
         <div className="container">
           <div className="row">
             <div className="col-lg-6">
               <div className="form md-mb50">
-                <h4 className="extra-title mb-50">Get In Touch.</h4>
-
-                <Formik
-                  initialValues={{
-                    name: "",
-                    email: "",
-                    message: "",
-                  }}
-                  onSubmit={async (values) => {
-                    await sendMessage(500);
-                    // alert(JSON.stringify(values, null, 2));
-                    // show message
-                    const formData = new FormData();
-
-                    formData.append('name', values.name);
-                    formData.append('email', values.email);
-                    formData.append('message', values.message);
-
-                    const res = await axios.post('/contact.php', formData);
-
-                    if (!res) return;
-
-                    messageRef.current.innerText =
-                      "Your Message has been successfully sent. I will contact you soon.";
-                    // Reset the values
-                    values.name = "";
-                    values.email = "";
-                    values.message = "";
-                    // clear message
-                    setTimeout(() => {
-                      messageRef.current.innerText = "";
-                    }, 2000);
-                  }}
-                >
-                  {({ errors, touched }) => (
-                    <Form id="contact-form">
-                      <div className="messages" ref={messageRef}></div>
-
-                      <div className="controls">
-                        <div className="form-group">
-                          <Field
-                            id="form_name"
-                            type="text"
-                            name="name"
-                            placeholder="Name"
-                            required="required"
-                          />
-                        </div>
-
-                        <div className="form-group">
-                          <Field
-                            validate={validateEmail}
-                            id="form_email"
-                            type="email"
-                            name="email"
-                            placeholder="Email"
-                            required="required"
-                          />
-                          {errors.email && touched.email && (
-                            <div>{errors.email}</div>
-                          )}
-                        </div>
-
-                        <div className="form-group">
-                          <Field
-                            as="textarea"
-                            id="form_message"
-                            name="message"
-                            placeholder="Message"
-                            rows="4"
-                            required="required"
-                          />
-                        </div>
-
-                        <button type="submit" className={`btn-curve ${theme === 'dark' ? 'btn-lit':'btn-color'} disabled`}>
-                          <span>Send Message</span>
-                        </button>
-                      </div>
-                    </Form>
-                  )}
-                </Formik>
+                <h4 className="extra-title mb-50">Compartenos tus datos.</h4>
+                    <form id="contact-form">
+                      <HubspotForm
+                          portalId='23136526'
+                          formId='8ce41ca0-6a9e-4bd9-8a27-111abe9285d3'
+                          onSubmit={() => console.log('Submit!')}
+                          onReady={(form) => console.log('Form ready!')}
+                          loading={<div>Loading...</div>}
+                      />
+                    </form>
               </div>
             </div>
             <div className="col-lg-5 offset-lg-1">
               <div className="cont-info">
                 <h4 className="extra-title mb-50">Contact Info.</h4>
-                <Split>
+{/*                <Split>
                   <h3 className="custom-font wow" data-splitting>
                     Let&apos;s Talk.
                   </h3>
@@ -118,32 +35,29 @@ const ContactWithMap = ({ theme = "dark" }) => {
                     <a href="#0">Email@example.com</a>
                   </h5>
                   <h5>+4.930.705.5448</h5>
-                </div>
+                </div>*/}
                 <Split>
                   <h3 className="custom-font wow" data-splitting>
-                    Visit Us.
+                    Visitanos.
                   </h3>
                 </Split>
                 <div className="item">
                   <h6>
-                    295 Witting Streets Suite 666,
+                    Alica 49, Lomas de Chapultepec,
                     <br />
-                    Melbourne, Australia
+                    CDMX, México
                   </h6>
                 </div>
                 <div className="social mt-50">
-                  <a href="#0" className="icon">
-                    <i className="fab fa-facebook-f"></i>
-                  </a>
-                  <a href="#0" className="icon">
-                    <i className="fab fa-twitter"></i>
-                  </a>
-                  <a href="#0" className="icon">
-                    <i className="fab fa-pinterest"></i>
-                  </a>
-                  <a href="#0" className="icon">
-                    <i className="fab fa-behance"></i>
-                  </a>
+                <a href="https://www.instagram.com/vennue.official/">
+                  <i className="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.linkedin.com/company/vennue/">
+                  <i className="fab fa-linkedin"></i>
+                </a>
+                <a href="https://www.facebook.com/vennue.official">
+                  <i className="fab fa-facebook-f"></i>
+                </a>
                 </div>
               </div>
             </div>
@@ -152,7 +66,7 @@ const ContactWithMap = ({ theme = "dark" }) => {
       </section>
       <div className="map" id="ieatmaps">
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19868.687203718404!2d-0.14297520856388865!3d51.502466162777694!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2sLondon%2C%20UK!5e0!3m2!1sen!2seg!4v1644772966009!5m2!1sen!2seg"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.7261799143225!2d-99.20541828489083!3d19.424233445980988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d201f0d32a134d%3A0xdd8ab85151b4712!2sAlica%2049%2C%20Lomas%20-%20Virreyes%2C%20Molino%20del%20Rey%2C%20Miguel%20Hidalgo%2C%2011040%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX!5e0!3m2!1sen!2smx!4v1673288787996!5m2!1sen!2smx"
           style={{ border: 0 }}
           allowFullScreen=""
           loading="lazy"
@@ -171,5 +85,6 @@ const ContactWithMap = ({ theme = "dark" }) => {
     </>
   );
 };
+
 
 export default ContactWithMap;

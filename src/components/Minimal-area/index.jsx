@@ -62,7 +62,7 @@ const MinimalArea = () => {
                     <span>3</span> Seguro
                   </h6>
                   <p>
-                    Mantenemos la privacidad y seguridad de tus visitantes dentro de nuestros protocolos de seguridad.
+                    Usamos los mejores protocoles para mantener la privacidad y seguridad de tus visitantes.
                   </p>
                 </li>
               </ul>

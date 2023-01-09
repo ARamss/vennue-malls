@@ -37,7 +37,7 @@ const IntroWithSlider1 = ({ sliderRef }) => {
           <Swiper
             speed={3000}
             autoplay={{
-              delay: 3000,
+              delay: 1000,
               disableOnInteraction: true,
             }}
             parallax={true}
@@ -139,17 +139,14 @@ const IntroWithSlider1 = ({ sliderRef }) => {
         ></div>
 
         <div className="social-icon">
-          <a href="#0">
+          <a href="https://www.instagram.com/vennue.official/">
+            <i className="fab fa-instagram"></i>
+          </a>
+          <a href="https://www.linkedin.com/company/vennue/">
+            <i className="fab fa-linkedin"></i>
+          </a>
+          <a href="https://www.facebook.com/vennue.official">
             <i className="fab fa-facebook-f"></i>
-          </a>
-          <a href="#0">
-            <i className="fab fa-twitter"></i>
-          </a>
-          <a href="#0">
-            <i className="fab fa-behance"></i>
-          </a>
-          <a href="#0">
-            <i className="fab fa-pinterest-p"></i>
           </a>
         </div>
       </div>
