@@ -14,7 +14,7 @@ const Clients1 = ({ theme, subBG }) => {
             <div className="sec-head custom-font mb-0">
               <h6>Partners</h6>
               <h3>
-                Se <br /> Parte
+                Sé <br /> Parte
               </h3>
             </div>
           </div>

@@ -10,7 +10,7 @@ const ContactWithMap = ({ theme = "dark" }) => {  return (
           <div className="row">
             <div className="col-lg-6">
               <div className="form md-mb50">
-                <h4 className="extra-title mb-50">Compartenos tus datos.</h4>
+                <h4 className="extra-title mb-50">Compártenos tus datos.</h4>
                     <form id="contact-form">
                       <HubspotForm
                           portalId='23136526'
@@ -38,7 +38,7 @@ const ContactWithMap = ({ theme = "dark" }) => {  return (
                 </div>*/}
                 <Split>
                   <h3 className="custom-font wow" data-splitting>
-                    Visitanos.
+                    Visítanos.
                   </h3>
                 </Split>
                 <div className="item">
